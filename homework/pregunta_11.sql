@@ -38,3 +38,7 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
+SELECT EXTRACT(YEAR FROM c14) AS YEAR, COUNT(*) AS CANT
+FROM tbl1
+WHERE EXTRACT(YEAR FROM c14) = 2018
+GROUP BY EXTRACT(YEAR FROM c14);
